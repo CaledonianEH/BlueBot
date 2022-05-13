@@ -29,7 +29,7 @@ public class VerifyChatListener extends ListenerAdapter {
 
     @Override
     public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
-        MessageChannel channel = jda.getTextChannelById(main.getConfig().getJSONObject("channels").getLong("verify"));
+        MessageChannel channel = jda.getTextChannelById(main.getConfig().getJSONObject("channels").getString("verify"));
         if (e.getChannel().getId().equals(channel.getId())) {
             try {
                 User user = e.getAuthor();
@@ -47,7 +47,7 @@ public class VerifyChatListener extends ListenerAdapter {
 
                 if(playerGetter.playerExistsInAPI(playerUUID) && playerGetter.playerDiscordValid(user, playerUUID)){
                     if(playerGetter.getPLayerGiftedRanks(playerUUID) >= 100){
-                        Role role = e.getGuild().getRoleById(main.getConfig().getJSONObject("roles").getLong("darkBlue"));
+                        Role role = e.getGuild().getRoleById(main.getConfig().getJSONObject("roles").getString("darkBlue"));
                         e.getGuild().addRoleToMember(e.getMember(), role).queue();
                         e.getGuild().modifyNickname(e.getMember(), String.format("DB \u2022 %s", username)).queue();
                     }else {

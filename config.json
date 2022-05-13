@@ -15,13 +15,13 @@
   "footer-icon": "https://i.imgur.com/TCM3mQx.png",
 
   "channels": {
-    "verify": ${{ VERIFY_CHANNEL_ID }}
+    "verify": "${{ VERIFY_CHANNEL_ID }}"
   },
   "roles": {
-    "darkBlue": ${{ DARK_BLUE_ROLE_ID }}
+    "darkBlue": ",${{ DARK_BLUE_ROLE_ID }}"
   },
 
   "development": {
-    "discord-id": ${{ DISCORD_ID }}
+    "discord-id": "${{ DISCORD_ID }}"
   }
 }

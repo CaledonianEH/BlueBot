@@ -27,7 +27,7 @@ public class UnlinkCommand extends ListenerAdapter {
             Guild guild = e.getGuild();
             try {
                 e.deferReply().queue();
-                Role role = e.getGuild().getRoleById(main.getConfig().getJSONObject("roles").getLong("darkBlue"));
+                Role role = e.getGuild().getRoleById(main.getConfig().getJSONObject("roles").getString("darkBlue"));
                 if(member.getRoles().contains(role)){
                     guild.modifyNickname(member, user.getName()).queue();
                     guild.removeRoleFromMember(member, role).queue();

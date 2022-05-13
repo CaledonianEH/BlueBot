@@ -16,7 +16,7 @@ public class Commands {
     }
 
     public void setupCommands(){
-        Guild guild = jda.getGuildById(main.getConfig().getJSONObject("development").getLong("discord-id"));
+        Guild guild = jda.getGuildById(main.getConfig().getJSONObject("development").getString("discord-id"));
         CommandListUpdateAction commands = guild.updateCommands();
         CommandListUpdateAction globalCommands = jda.updateCommands();
 
