@@ -1,0 +1,31 @@
+{
+  "token": "",
+
+  "hypixel": {
+    "key": ""
+  },
+
+  "activity": {
+    "status": "IDLE",
+    "activity": "caledonian.dev"
+  },
+
+  "support-discord": "https://caledonian.dev/",
+  "footer-link": "Caledonian 2022",
+  "footer-icon": "https://i.imgur.com/TCM3mQx.png",
+
+  "channels": {
+    "verify": 0
+  },
+  "roles": {
+    "staff": 0,
+    "darkBlue": 0
+  },
+
+  "development": {
+    "discord-id": 0,
+    "developers": [
+
+    ]
+  }
+}
