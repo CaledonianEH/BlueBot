@@ -1,8 +1,8 @@
 {
-  "token": "",
+  "token": "${{ DISCORD_BOT_TOKEN }}",
 
   "hypixel": {
-    "key": ""
+    "key": "${{ DISCORD_BOT_TOKEN }}"
   },
 
   "activity": {
@@ -15,17 +15,13 @@
   "footer-icon": "https://i.imgur.com/TCM3mQx.png",
 
   "channels": {
-    "verify": 0
+    "verify": ${{ VERIFY_CHANNEL_ID }}
   },
   "roles": {
-    "staff": 0,
-    "darkBlue": 0
+    "darkBlue": ${{ DARK_BLUE_ROLE_ID }}
   },
 
   "development": {
-    "discord-id": 0,
-    "developers": [
-
-    ]
+    "discord-id": ${{ DISCORD_ID }}
   }
 }
